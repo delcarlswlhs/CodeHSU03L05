@@ -22,7 +22,8 @@ public class Salmon {
         System.out.println("Enter the month of the year as a number: ");
         int month = input.nextInt();
         // Use if/else if/else statement to determine if it is spawning season
-        if(month<3){
+
+        /*if(month<3){
             System.out.println("Not spawning season");
         }
         else if(month < 7){
@@ -36,6 +37,16 @@ public class Salmon {
         }
         else{
             System.out.println("Not spawning season");
+        }*/
+
+        if(month>=3 && month<=6){
+            System.out.println("Spring spawning season.");
+        }
+        else if(month>=9 && month<=11) {
+            System.out.println("Fall spawning season.");
+        }
+        else{
+            System.out.println("Not spawning season.");
         }
 
     }
